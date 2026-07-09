@@ -31,10 +31,10 @@ Windows VM:
 This allowed communication between attacker and victim systems within an isolated network.
 
 # Tools Used
-GoPhish – phishing campaign management and tracking
-MailHog – SMTP email testing
-VirtualBox – lab environment
-Custom HTML landing page – credential harvesting interface
+- GoPhish – phishing campaign management and tracking
+- MailHog – SMTP email testing
+- VirtualBox – lab environment
+- Custom HTML landing page – credential harvesting interface
 
 # Phishing Email Design
 A phishing email was created to mimic an internal IT security notification, requesting users to verify their MediTrack account.
