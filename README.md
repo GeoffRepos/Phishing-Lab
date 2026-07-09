@@ -55,7 +55,7 @@ Key features:
 - Credential submission form
 
 # Phishing Campaign Execution
-1. Phishing email sent via GoPhish
+1. Phishing email sent via GoPhish ![Phishing email](screenshots/MailHog Email Opened.png)
 2. Email received in MailHog (Windows VM)
 3. User clicked phishing link
 4. Landing page loaded with unique tracking ID
