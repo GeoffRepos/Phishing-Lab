@@ -2,24 +2,24 @@
 This lab demonstrates a phishing attack simulation conducted in a controlled virtual lab environment. The objective was to simulate a real-world credential harvesting attack using GoPhish, while capturing user interaction and submitted credentials.
 The lab showcases key offensive security concepts including:
 
-Social engineering through phishing emails
-Credential harvesting via a fake login portal
-User interaction tracking (email opens, clicks, submissions)
-Infrastructure setup across multiple VMs
+- Social engineering through phishing emails
+- Credential harvesting via a fake login portal
+- User interaction tracking (email opens, clicks, submissions)
+- Infrastructure setup across multiple VMs
 
 # Objectives
-Configure a phishing simulation environment
-Design a realistic phishing email and landing page
-Deliver phishing emails using GoPhish
-Capture user credentials via a controlled attack
-Analyse user interaction data
+- Configure a phishing simulation environment
+- Design a realistic phishing email and landing page
+- Deliver phishing emails using GoPhish
+- Capture user credentials via a controlled attack
+- Analyse user interaction data
 
 # Lab Architecture
 The lab environment consisted of the following components:
-Ubuntu VM (Attacker machine (GoPhish + Mail server))
-Windows VM (Victim machine)
-GoPhish (Phishing framework (email + landing page + tracking))
-MailHog (Email capture server)
+- Ubuntu VM (Attacker machine (GoPhish + Mail server))
+- Windows VM (Victim machine)
+- GoPhish (Phishing framework (email + landing page + tracking))
+- MailHog (Email capture server)
 
 # Network Configuration
 Ubuntu VM:
@@ -40,27 +40,27 @@ Custom HTML landing page – credential harvesting interface
 A phishing email was created to mimic an internal IT security notification, requesting users to verify their MediTrack account.
 Key social engineering elements:
 
-Authority: IT Support Team branding
-Urgency: “24 hours to verify”
-Fear: potential loss of system access
-Realism: corporate formatting and tone
+- Authority: IT Support Team branding
+- Urgency: “24 hours to verify”
+- Fear: potential loss of system access
+- Realism: corporate formatting and tone
 
 # Landing Page Development
 A realistic login page was designed to replicate an internal staff portal.
 Key features:
 
-Username and password fields
-Professional UI styling
-Security messaging (TLS, compliance labels)
-Credential submission form
+- Username and password fields
+- Professional UI styling
+- Security messaging (TLS, compliance labels)
+- Credential submission form
 
 # Phishing Campaign Execution
-Phishing email sent via GoPhish
-Email received in MailHog (Windows VM)
-User clicked phishing link
-Landing page loaded with unique tracking ID
-Credentials entered and submitted
-GoPhish captured user data
+1. Phishing email sent via GoPhish
+2. Email received in MailHog (Windows VM)
+3. User clicked phishing link
+4. Landing page loaded with unique tracking ID
+5. Credentials entered and submitted
+6. GoPhish captured user data
 
 # Results
 GoPhish successfully tracked:
@@ -72,16 +72,16 @@ GoPhish successfully tracked:
 
 Captured data included:
 
-Username
-Password
-Timestamp
-User interaction data
+- Username
+- Password
+- Timestamp
+- User interaction data
 
 # Key Learnings
-Modern phishing attacks rely heavily on social engineering rather than technical exploits
-Small configuration errors (e.g., form actions, network routing) can break attack chains
-Realistic UI design significantly increases credibility
-GoPhish requires simple HTML forms for reliable credential capture
+- Modern phishing attacks rely heavily on social engineering rather than technical exploits
+- Small configuration errors (e.g., form actions, network routing) can break attack chains
+- Realistic UI design significantly increases credibility
+- GoPhish requires simple HTML forms for reliable credential capture
 
 # Ethical Considerations
 This lab was conducted in a controlled, isolated environment for educational purposes only.
@@ -90,9 +90,9 @@ No real systems, users, or credentials were targeted.
 # Conclusion
 This lab successfully demonstrated a complete phishing attack lifecycle:
 
-Email delivery
-User interaction
-Credential harvesting
+- Email delivery
+- User interaction
+- Credential harvesting
 
 The project highlights both the technical execution and the human factors involved in phishing attacks.
 
